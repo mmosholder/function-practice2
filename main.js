@@ -70,3 +70,32 @@ var vowels = function(str) {
 	return emptyArr;	
 
 };
+
+// // 8
+var twins = function(arr) {
+	for(var i = 0; i < arr.length; i+=2) {
+		if(arr[i] != arr[i+1]) {
+			return false;
+		}
+	}
+	return true;
+};
+
+// 9
+var or = function(arr) {
+	for(var i = 0; i < arr.length; i++) {
+		if(arr[i] === true) {
+			return true;
+		}
+	}
+	return false;
+};
+
+// 10 
+var unique = function(arr) {
+	for(var i = 0; i < arr.length; i++) {
+		if(arr[i] === arr[i]) {
+			console.log(arr[i]);
+		}
+	}	
+};	
